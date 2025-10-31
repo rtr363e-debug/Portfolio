@@ -1,0 +1,232 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hasnain Abbasi | Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0b6ad46.js" crossorigin="anonymous"></script>
+
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif;}
+    html,body{height:100%;background:#fff;color:#111;scroll-behavior:smooth;}
+    header{
+      height:100vh;display:flex;flex-direction:column;align-items:center;
+      justify-content:center;text-align:center;background:linear-gradient(180deg,#fff,#f7f4e9);
+      padding:30px;
+    }
+    header img{
+      width:200px;height:200px;object-fit:cover;border-radius:50%;
+      border:6px solid #d4af37;box-shadow:0 10px 30px rgba(0,0,0,0.08);
+      animation:float 3s ease-in-out infinite;margin-bottom:18px;
+    }
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    header h1{font-size:2.9rem;font-weight:600;color:#111}
+    header p{color:#555;margin-top:8px;font-size:1.05rem}
+    .btn{display:inline-block;margin-top:18px;padding:12px 32px;border-radius:30px;
+         background:#d4af37;color:#fff;text-decoration:none;font-weight:600;transition:all .25s;}
+    .btn:hover{transform:translateY(-3px);background:#c29e2a}
+
+    nav{position:fixed;top:18px;right:24px;z-index:999}
+    nav a{color:#d4af37;text-decoration:none;font-weight:600;padding:8px 12px;border-radius:8px;border:1px solid transparent}
+    nav a:hover{background:#fff6dc;border:1px solid #efe2a8}
+
+    section{padding:80px 10%}
+    section h2{font-size:2.05rem;margin-bottom:18px;position:relative}
+    section h2::after{content:"";position:absolute;left:0;bottom:-10px;width:70px;height:4px;background:#d4af37;border-radius:2px}
+
+    p{color:#444;line-height:1.75}
+
+    .gallery-images, .music-gallery, .food-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+    .gallery-images img, .music-gallery img, .food-gallery img{
+      width:100%;border-radius:12px;border:2px solid #d4af37;transition:transform .2s,box-shadow .2s;
+      object-fit:cover;height:220px;
+    }
+    .gallery-images img:hover, .music-gallery img:hover, .food-gallery img:hover{
+      transform:scale(1.04);box-shadow:0 12px 30px rgba(0,0,0,0.12);
+    }
+
+    .interests{background:#faf8f2;border-top:2px solid #d4af37;border-bottom:2px solid #d4af37;padding:60px 10%}
+    .interest-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+    .interest-card{background:#fff;border:2px solid #d4af37;border-radius:14px;padding:18px;text-align:center;
+                   box-shadow:0 8px 20px rgba(0,0,0,0.06);transition:transform .22s,box-shadow .22s;cursor:pointer}
+    .interest-card:hover{transform:scale(1.06);box-shadow:0 14px 30px rgba(0,0,0,0.12)}
+
+    .skills{margin-top:36px}
+    .skill-row{margin:18px 0}
+    .skill-row strong{display:block;margin-bottom:8px;color:#111}
+    .skill-bar{height:12px;background:#eee;border-radius:12px;overflow:hidden}
+    .skill-bar > i{display:block;height:100%;background:linear-gradient(90deg,#d4af37,#f8e694);width:0;border-radius:12px;
+                    transition:width 1.6s ease}
+
+    .academics p{max-width:900px}
+
+    .contact{background:#fafafa;padding:60px 10%;text-align:center;border-top:1px solid #eee}
+    .contact a{color:#d4af37;text-decoration:none;font-weight:600}
+    .contact a:hover{text-decoration:underline}
+
+    footer{text-align:center;padding:22px;background:#f8f7f3;color:#777;border-top:2px solid #d4af37;font-size:.92rem}
+
+    @media (max-width:768px){
+      header h1{font-size:2rem}
+      header img{width:160px;height:160px}
+      section{padding:50px 6%}
+      nav{right:12px}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="img1.jpeg" alt="Hasnain Profile">
+    <h1>Hasnain Abbasi</h1>
+    <p>16-year-old Medical Student | CGHSS | Explorer & Creator</p>
+    <a class="btn" href="#about">Discover More</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#school-life">School</a>
+      <a href="#music">Music</a>
+      <a href="#interests">Movies</a>
+      <a href="#food">Food</a>
+      <a href="#academics">Academics</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m <strong>Hasnain Abbasi</strong>, a 16-year-old medical student from CGHSS. I love creativity, exploration, and expressing thoughts through visuals and stories. My world blends curiosity, learning, and art — and I’m getting better every day.</p>
+  </section>
+
+  <!-- School Life -->
+  <section id="school-life">
+    <h2>My School Life</h2>
+    <p>Life at school has its fluctuations. Grand tests often show up on Fridays — tests teachers insist on — and the pressure can be real. But with great friends who chat, joke, and support me, school becomes a place of memories and small victories. I laugh, learn, and find music and shows that keep my mind alive even during the busiest days.</p>
+    <div class="gallery-images">
+      <img src="img2.jpg" alt="School Image">
+      <img src="img3.jpg" alt="School Life 2">
+      <img src="img4.jpg" alt="School Life 3">
+    </div>
+  </section>
+
+  <!-- Music -->
+  <section id="music">
+    <h2>My Music Choices</h2>
+    <p>Music is my safe place. At the top of my list is <strong>Billie Eilish</strong>, followed by <strong>Taylor Swift</strong>, <strong>The Weeknd</strong>, and <strong>Arctic Monkeys</strong>. Billie’s sound and style influence a lot of what I listen to — a song like <em>"Birds of a Feather"</em> really speaks to me.</p>
+    <div class="music-gallery">
+      <img src="IMG-678.jpeg" alt="Billie Eilish">
+      <img src="IMG-679.jpg" alt="The Weeknd">
+      <img src="IMG-680.jpg" alt="Taylor Swift">
+    </div>
+  </section>
+
+  <!-- Interests / Movies -->
+  <section id="interests" class="interests">
+    <h2>My Interests</h2>
+    <p>I’m such a <strong>cinephile</strong> that I’ve even skipped my best tests to binge series like <em>The Vampire Diaries</em>. Movies and shows feed my imagination and help me think in new ways.</p>
+
+    <div class="interest-grid" id="movieCards">
+      <div class="interest-card" data-title="Money Heist">
+        <h3>🎬 Money Heist</h3>
+        <p>Strategic heists, clever planning — a show that sparks my analytical side.</p>
+      </div>
+
+      <div class="interest-card" data-title="The Vampire Diaries">
+        <h3>🧛‍♂️ The Vampire Diaries</h3>
+        <p>Emotion, mystery and drama — a series I rewatch and love.</p>
+      </div>
+
+      <div class="interest-card" data-title="From">
+        <h3>👁️ From</h3>
+        <p>A dark, strange show that keeps me guessing.</p>
+      </div>
+
+      <div class="interest-card" data-title="The Fall of the House of Usher">
+        <h3>🏚️ The Fall of the House of Usher</h3>
+        <p>Gothic, symbolic, and deeply cinematic — one of my top favorites.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Favorite Foods -->
+  <section id="food">
+    <h2>My Favorite Foods</h2>
+    <p>I can’t resist <strong>crispy French fries</strong>. Ice cream is my weakness — I admit I consume a lot of sugar sometimes, especially with a chilled <strong>Pepsi</strong> on the side. Food is comfort, and those small pleasures keep life fun. Sometimes I mix flavors and try new combos — a little adventure on the plate.</p>
+    <div class="food-gallery">
+      <img src="food1.jpg" alt="French Fries">
+      <img src="food2.jpg" alt="Ice Cream and Pepsi">
+    </div>
+  </section>
+
+  <!-- Academic Excellence -->
+  <section id="academics" class="academics">
+    <h2>My Academic Excellence</h2>
+    <p>I used to be a really good student up through 9th class. In 10th class I struggled more — I managed passing marks and got around <strong>70%–80%</strong> in some grand tests, but I often felt I didn’t meet my own expectations. I consider that a learning chapter, not the end. I’m determined to improve strongly in the years ahead.</p>
+    <!-- Optional academic image (if you add it)
+    <img src="img_academic.jpeg" alt="Academic Image" style="margin-top:20px;border-radius:12px;max-width:640px;border:3px solid #d4af37;">
+    -->
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+
+    <div class="skill-row"><strong>Creativity</strong>
+      <div class="skill-bar"><i style="width:95%"></i></div>
+    </div>
+
+    <div class="skill-row"><strong>Photography</strong>
+      <div class="skill-bar"><i style="width:85%"></i></div>
+    </div>
+
+    <div class="skill-row"><strong>Problem Solving</strong>
+      <div class="skill-bar"><i style="width:80%"></i></div>
+    </div>
+
+    <div class="skill-row"><strong>Teamwork</strong>
+      <div class="skill-bar"><i style="width:90%"></i></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p><strong>Phone:</strong> <a href="tel:03190102090">0319-010-2090</a></p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/truee.hasnain" target="_blank">@truee.hasnain</a></p>
+  </section>
+
+  <footer>© 2025 Hasnain Abbasi | All Rights Reserved</footer>
+
+  <script>
+    // Card click magnify (acts like a button)
+    document.querySelectorAll('.interest-card').forEach(card=>{
+      card.addEventListener('click', ()=>{
+        card.style.transform = 'scale(1.08)';
+        card.style.boxShadow = '0 18px 40px rgba(0,0,0,0.18)';
+        setTimeout(()=>{ card.style.transform='scale(1.06)'; card.style.boxShadow='0 10px 30px rgba(0,0,0,0.12)'; },180);
+      });
+    });
+
+    // Animate skill bars when in view
+    const skillObserver = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.querySelectorAll('i').forEach(i=>{
+            const w = i.style.width || '0%';
+            i.style.width = w; // already inline, CSS transition will animate
+          });
+          skillObserver.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.3});
+
+    document.querySelectorAll('.skills').forEach(s=>skillObserver.observe(s));
+  </script>
+</body>
+</html>
